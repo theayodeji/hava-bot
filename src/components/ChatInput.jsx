@@ -91,6 +91,16 @@ const ChatInput = () => {
             status="send"
             message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ad excepturi vero esse obcaecati itaque? Qui recusandae optio quod incidunt cum corporis neque nulla amet excepturi eligendi. Fuga, facilis atque?"
           />
+          <ChatBox
+            id="2"
+            status="send"
+            message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ad excepturi vero esse obcaecati "
+          />
+          <ChatBox
+            id="2"
+            status="receive"
+            message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ad excepturi vero esse obcaecati itaque? Qui recusandae optio quod incidunt cum corporis neque nulla amet excepturi eligendi. Fuga, facilis atque?"
+          />
         </div >
       </section >
       {/* FORM */}

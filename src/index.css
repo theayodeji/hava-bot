@@ -55,16 +55,16 @@ body {
   padding: 10px 0;
   margin: 5px 0;
   background: none;
-  border: 2px solid black;
+  border: 2px solid #002626;
   border-radius: 10px;
-  color: black;
+  color: #002626;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .buttons button:hover {
-  background-color: black;
+  background-color: #002626;
   color: white;
 }
 
@@ -72,7 +72,7 @@ body {
   font-size: 14px;
   text-align: center;
   margin-top: auto;
-  color: black;
+  color: #002626;
   justify-self: flex-end;
 }
 
@@ -124,19 +124,18 @@ form {
 }
 
 .send-button {
-  /* background-color: ; */
-  padding: 8px 4px;
+  padding: 8px;
+  cursor: pointer;
 }
 
 /* CHAT VIEWS */
 .chat-block {
   display: flex;
   flex-flow: column nowrap;
-  gap: 50px;
+  gap: 30px;
   width: 100%;
   position: relative;
-  padding-bottom: 70px;
-  /* overflow-y: auto; */
+  padding-bottom: 80px;
 }
 
 .chat {
@@ -153,7 +152,8 @@ form {
 
 .send {
   align-self: flex-end;
-  background-color: rgb(134, 246, 116);
+  background-color: #538c61;
+  color: white;
 }
 
 .chat-content {
