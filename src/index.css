@@ -1,0 +1,70 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 40px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.bot-avatar {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.bot-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.buttons button {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  background: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: black;
+  color: white;
+}
+
+.copyright {
+  font-size: 14px;
+  text-align: center;
+  margin-top: auto;
+  color: black;
+  justify-self: flex-end;
+}
