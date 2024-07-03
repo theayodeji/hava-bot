@@ -1,14 +1,21 @@
-@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url("https://fonts.cdnfonts.com/css/poppins");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+/* SIDEBAR */
+
 .sidebar {
-  width: 300px;
+  width: 450px;
+  max-width: 450px;
   height: 100vh;
   color: #ecf0f1;
   display: flex;
@@ -48,16 +55,16 @@
   padding: 10px 0;
   margin: 5px 0;
   background: none;
-  border: 2px solid black;
+  border: 2px solid #002626;
   border-radius: 10px;
-  color: black;
+  color: #002626;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .buttons button:hover {
-  background-color: black;
+  background-color: #002626;
   color: white;
 }
 
@@ -65,7 +72,7 @@
   font-size: 14px;
   text-align: center;
   margin-top: auto;
-  color: black;
+  color: #002626;
   justify-self: flex-end;
 }
 /* Mobile devices */
@@ -130,4 +137,88 @@
   .copyright {
     font-size: 12px;
   }
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 30px 10px 0px 10px;
+  overflow: hidden;
+}
+
+section {
+  overflow-y: auto;
+  height: 100%;
+}
+
+form {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  width: 100%;
+  bottom: 0;
+  left: 2px;
+  z-index: 50;
+  padding: 10px;
+  box-shadow: (0px -58px 5px rgba(0, 0, 0, 0.184));
+}
+
+.chat-input {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid rgba(128, 128, 128, 0.537);
+  outline: none;
+  padding: 5px;
+  border-radius: 1px;
+  height: 40px;
+}
+
+.chat-input:focus {
+  border: 1px solid black;
+}
+
+.send-button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* CHAT VIEWS */
+.chat-block {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.chat {
+  max-width: 80%;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.receive {
+  align-self: flex-start;
+  background-color: rgb(228, 228, 228);
+}
+
+.send {
+  align-self: flex-end;
+  background-color: #538c61;
+  color: white;
+}
+
+.chat-content {
+  font-size: 14px;
 }
