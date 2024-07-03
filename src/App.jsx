@@ -1,11 +1,12 @@
 // import { useState } from 'react'
 
-import Sidebar from './components/Sidebar'
+import { Sidebar, ChatInput } from './components'
 
 function App() {
   return (
     <div className='container'>
       <Sidebar />
+      <ChatInput />
     </div>
   )
 }
